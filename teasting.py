@@ -27,6 +27,7 @@ class teast():
 
     def guss(self,there_guss):
         #make sure self.anser is defind flag error if not
+        try:
             self.anser
         except:
             print("need to get data using teast.get() befor teast.guss()")
