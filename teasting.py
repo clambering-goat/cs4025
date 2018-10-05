@@ -26,6 +26,12 @@ class teast():
         return(data_out)
 
     def guss(self,there_guss):
+        #make sure self.anser is defind flag error if not
+            self.anser
+        except:
+            print("need to get data using teast.get() befor teast.guss()")
+            print("now closing python ")
+            exit()
         if there_guss==self.anser:
             self.got_right+=1
             return("yes")
@@ -33,13 +39,19 @@ class teast():
             self.got_wrong+=1
             return("no")
 
-temp=teast()
+def exsample():
 
-x=temp.get()
-for q in x:
-    print(q)
+    teaxt='''
+    temp=teast()
+
+    x=temp.get()
+
+    for q in x:
+        print(q)
 
 
-y=temp.guss("ENTAILMENT")
+    y=temp.guss("ENTAILMENT")
 
-print(y)
+    print(y)
+    '''
+    print(teaxt)
