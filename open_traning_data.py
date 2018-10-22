@@ -30,3 +30,6 @@ def  open_data():
     return(train_data)
     #print((train_data[10000]))
     #print("done")
+for q in (open_data()):
+
+    print(open_data(q))
