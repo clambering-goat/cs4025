@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8da2c4c-1ae0-4360-b4ef-4d6e40074ab3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/cs4025.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cs4025.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dependencies and Dependency Grammar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dependencies and Dependency Grammar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sick_teast/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sick_teast/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sick_train/SICK_train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sick_train/SICK_train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sick_train/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sick_train/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comapre_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/comapre_words.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,22 +16,22 @@
     <session id="-750085627">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="983" />
+          <entry key="py" value="1151" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="983" />
+          <entry key="Python" value="1151" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -77,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dependencies and Dependency Grammar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="222">
+              <caret line="91" column="26" lean-forward="true" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
               <folding>
                 <element signature="e#16#59#0" expanded="true" />
               </folding>
@@ -89,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comapre_words.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-end-line="9" selection-end-column="27" />
+            <state>
+              <caret column="9" selection-start-column="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -130,12 +126,13 @@
       <list>
         <option value="$PROJECT_DIR$/open_traning_data.py" />
         <option value="$PROJECT_DIR$/laberer.py" />
+        <option value="$PROJECT_DIR$/comapre_words.py" />
         <option value="$PROJECT_DIR$/Dependencies and Dependency Grammar.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -188,6 +185,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Dependencies and Dependency Grammar.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="comapre_words" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cs4025" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comapre_words.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -264,10 +282,12 @@
       <item itemvalue="Python.parser" />
       <item itemvalue="Python.laberer" />
       <item itemvalue="Python.Dependencies and Dependency Grammar" />
+      <item itemvalue="Python.comapre_words" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Dependencies and Dependency Grammar" />
+        <item itemvalue="Python.comapre_words" />
         <item itemvalue="Python.laberer" />
         <item itemvalue="Python.parser" />
         <item itemvalue="Python.open_traning_data" />
@@ -289,15 +309,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36858973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33296824" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39587852" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33187294" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -312,6 +331,22 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Dependencies and Dependency Grammar.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Dependencies and Dependency Grammar.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/open_traning_data.py">
@@ -352,15 +387,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comapre_words.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-end-line="9" selection-end-column="27" />
+        <state>
+          <caret column="9" selection-start-column="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dependencies and Dependency Grammar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="222">
+          <caret line="91" column="26" lean-forward="true" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
           <folding>
             <element signature="e#16#59#0" expanded="true" />
           </folding>

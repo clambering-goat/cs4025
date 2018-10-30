@@ -1,0 +1,1413 @@
+C:\Users\cameron\AppData\Local\Programs\Python\Python35\python.exe "C:/Users/cameron/Desktop/cs4025/Dependencies and Dependency Grammar.py"
+C:\Users\cameron\AppData\Local\Programs\Python\Python35\lib\site-packages\gensim\utils.py:1212: UserWarning: detected Windows; aliasing chunkize to chunkize_serial
+  warnings.warn("detected Windows; aliasing chunkize to chunkize_serial")
+last entey
+sentance 1 A woman is chopping a red onion
+sentance 2 A woman is chopping an onion
+
+C:\Users\cameron\AppData\Local\Programs\Python\Python35\lib\site-packages\gensim\matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int32 == np.dtype(int).type`.
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+  if np.issubdtype(vec.dtype, np.int):
+
+sentance 1
+('chopping', 'woman')
+sentace 2
+('chopping', 'woman')
+s1 and s2 are talk about the same thing
+action on object  ['chopping'] ['chopping']
+object simality = 0.99999994
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A man is pushing the buttons of a microwave
+sentance 2 One man is powering the microwave
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('nummod', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('pushing', 'man')
+sentace 2
+('powering', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A blond boy is walking up a sand dune with a skateboard
+sentance 2 A blond boy is sliding down a sand dune on a skateboard
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('compound:prt', 5, 6), ('det', 9, 7), ('compound', 9, 8), ('dobj', 5, 9), ('case', 12, 10), ('det', 12, 11), ('nmod', 5, 12)]
+
+sentance 1
+('walking', 'boy')
+sentace 2
+('sliding', 'boy')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A red dog is sitting and dropping a tennis ball from its mouth
+sentance 2 A red dog is jumping and catching a tennis ball in its mouth
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('cc', 5, 6), ('conj', 5, 7), ('det', 10, 8), ('compound', 10, 9), ('dobj', 7, 10), ('case', 13, 11), ('nmod:poss', 13, 12), ('nmod', 7, 13)]
+
+sentance 1
+('sitting', 'dog')
+sentace 2
+('jumping', 'dog')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A blonde boy in green is standing on a swing
+sentance 2 A little girl with blond hair is smiling and sitting on a swing
+
+Dependency Parsing 2  [('ROOT', 0, 8), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 8, 3), ('case', 6, 4), ('amod', 6, 5), ('nmod', 3, 6), ('aux', 8, 7), ('cc', 8, 9), ('conj', 8, 10), ('case', 13, 11), ('det', 13, 12), ('nmod', 10, 13)]
+
+sentance 1
+('standing', 'boy')
+sentace 2
+('smiling', 'girl')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 Three dogs are resting on a sidewalk
+sentance 2 Three dogs are resting on the pavement
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('nummod', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('case', 7, 5), ('det', 7, 6), ('nmod', 4, 7)]
+
+sentance 1
+('resting', 'dogs')
+sentace 2
+('resting', 'dogs')
+s1 and s2 are talk about the same thing
+action on object  ['resting'] ['resting']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 One man is eating some food
+sentance 2 A man is eating some food
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('eating', 'man')
+sentace 2
+('eating', 'man')
+s1 and s2 are talk about the same thing
+action on object  ['eating'] ['eating']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 Two white dogs are running and jumping along a beach
+sentance 2 Two dogs are playing on the beach
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('nummod', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('case', 7, 5), ('det', 7, 6), ('nmod', 4, 7)]
+
+sentance 1
+('running', 'dogs')
+sentace 2
+('playing', 'dogs')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  ENTAILMENT
+sentance 1 A woman is placing skewers onto a rack
+sentance 2 There is no woman placing skewers onto a rack
+
+Dependency Parsing 2  [('ROOT', 0, 2), ('expl', 2, 1), ('neg', 4, 3), ('nsubj', 2, 4), ('acl', 4, 5), ('dobj', 5, 6), ('case', 9, 7), ('det', 9, 8), ('nmod', 5, 9)]
+
+sentance 1
+('placing', 'woman')
+sentace 2
+('is', 'woman')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  CONTRADICTION
+sentance 1 A man is standing next to a bus
+sentance 2 A man is standing on a sidewalk
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('case', 7, 5), ('det', 7, 6), ('nmod', 4, 7)]
+
+sentance 1
+('standing', 'man')
+sentace 2
+('standing', 'man')
+s1 and s2 are talk about the same thing
+action on object  ['standing'] ['standing']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 There is no man wearing a straw hat who is smoking a cigarette
+sentance 2 A man is wearing a straw hat and smoking a cigarette
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 7, 5), ('compound', 7, 6), ('dobj', 4, 7), ('cc', 7, 8), ('conj', 7, 9), ('det', 11, 10), ('dobj', 9, 11)]
+
+sentance 1
+('is', 'man')
+('smoking', 'who')
+sentace 2
+('wearing', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  CONTRADICTION
+sentance 1 There is no man breaking a slab of concrete with a sledge hammer
+sentance 2 The man is using a sledgehammer to break a concrete block that is on another man
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6), ('mark', 8, 7), ('acl', 6, 8), ('det', 11, 9), ('amod', 11, 10), ('dobj', 8, 11), ('nsubj', 16, 12), ('cop', 16, 13), ('case', 16, 14), ('det', 16, 15), ('acl:relcl', 11, 16)]
+
+sentance 1
+('is', 'man')
+sentace 2
+('using', 'man')
+('man', 'that')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  CONTRADICTION
+sentance 1 A man and a woman are outside and are wearing light colored shirts
+sentance 2 A man and a woman are in a beige room, wearing dark colored shirts and a monitor is in the background
+
+Dependency Parsing 2  [('ROOT', 0, 10), ('det', 2, 1), ('nsubj', 10, 2), ('cc', 2, 3), ('det', 5, 4), ('conj', 2, 5), ('cop', 10, 6), ('case', 10, 7), ('det', 10, 8), ('amod', 10, 9), ('punct', 10, 11), ('csubj', 22, 12), ('amod', 15, 13), ('amod', 15, 14), ('dobj', 12, 15), ('cc', 15, 16), ('det', 18, 17), ('conj', 15, 18), ('cop', 22, 19), ('case', 22, 20), ('det', 22, 21), ('parataxis', 10, 22)]
+
+sentance 1
+('outside', 'man')
+sentace 2
+('room', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A piece of wood is being screwed to a wall by a man
+sentance 2 A man is screwing a piece of wood to a wall
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6), ('case', 8, 7), ('nmod', 6, 8), ('case', 11, 9), ('det', 11, 10), ('nmod', 4, 11)]
+
+sentance 1
+sentace 2
+('screwing', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  ENTAILMENT
+sentance 1 Two boys, who look small, dressed in tuxedos are sitting on a red carpeted floor
+sentance 2 Two little boys are wearing tuxedos
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('nummod', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('dobj', 5, 6)]
+
+sentance 1
+('sitting', 'boys')
+('look', 'who')
+('sitting', 'dressed')
+sentace 2
+('wearing', 'boys')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  ENTAILMENT
+sentance 1 There is no person slicing an onion
+sentance 2 A person is slicing an onion
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('is', 'person')
+sentace 2
+('slicing', 'person')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  CONTRADICTION
+sentance 1 A kid is playing an instrument
+sentance 2 A kid is throwing away an instrument
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('compound:prt', 4, 5), ('det', 7, 6), ('dobj', 4, 7)]
+
+sentance 1
+('playing', 'kid')
+sentace 2
+('throwing', 'kid')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 The children are wearing black tights and hopping
+sentance 2 Some children are wearing black tights and hopping
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('amod', 6, 5), ('dobj', 4, 6), ('cc', 4, 7), ('conj', 4, 8)]
+
+sentance 1
+('wearing', 'children')
+sentace 2
+('wearing', 'children')
+s1 and s2 are talk about the same thing
+action on object  ['wearing'] ['wearing']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 The boys are standing in front of the burning car
+sentance 2 The boys are not standing in front of the burning car
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 2, 1), ('nsubj', 5, 2), ('aux', 5, 3), ('neg', 5, 4), ('case', 7, 6), ('nmod', 5, 7), ('case', 11, 8), ('det', 11, 9), ('compound', 11, 10), ('nmod', 7, 11)]
+
+sentance 1
+('standing', 'boys')
+sentace 2
+('standing', 'boys')
+s1 and s2 are talk about the same thing
+action on object  ['standing'] ['standing']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  CONTRADICTION
+sentance 1 A brown and white dog is playing on the grass
+sentance 2 A dog is playing on the green grass
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('case', 8, 5), ('det', 8, 6), ('amod', 8, 7), ('nmod', 4, 8)]
+
+sentance 1
+('playing', 'dog')
+sentace 2
+('playing', 'dog')
+s1 and s2 are talk about the same thing
+action on object  ['playing'] ['playing']
+object simality = 1.0000001
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A black and a white dog are joyfully running on the grass
+sentance 2 One white dog and one black one are running side by side on the grass
+
+Dependency Parsing 2  [('ROOT', 0, 9), ('nummod', 3, 1), ('amod', 3, 2), ('nsubj', 9, 3), ('cc', 3, 4), ('nummod', 7, 5), ('amod', 7, 6), ('conj', 3, 7), ('aux', 9, 8), ('dobj', 9, 10), ('case', 12, 11), ('nmod', 9, 12), ('case', 15, 13), ('det', 15, 14), ('nmod', 9, 15)]
+
+sentance 1
+('running', 'black')
+sentace 2
+('running', 'dog')
+s1 and s2 are talk about the same thing
+action on object  ['running'] ['running']
+object simality = 0.99999994
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 A horse and its rider are leaping over a barrier
+sentance 2 A horse and its rider are not leaping over a barrier
+
+Dependency Parsing 2  [('ROOT', 0, 8), ('det', 2, 1), ('nsubj', 8, 2), ('cc', 2, 3), ('nmod:poss', 5, 4), ('conj', 2, 5), ('aux', 8, 6), ('neg', 8, 7), ('case', 11, 9), ('det', 11, 10), ('nmod', 8, 11)]
+
+sentance 1
+('leaping', 'horse')
+sentace 2
+('leaping', 'horse')
+s1 and s2 are talk about the same thing
+action on object  ['leaping'] ['leaping']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  CONTRADICTION
+sentance 1 A man is playing an electric guitar
+sentance 2 A man is playing a guitar
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('playing', 'man')
+sentace 2
+('playing', 'man')
+s1 and s2 are talk about the same thing
+action on object  ['playing'] ['playing']
+object simality = 1.0000001
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A woman is dancing gracefully
+sentance 2 A woman is dancing
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3)]
+
+sentance 1
+('dancing', 'woman')
+sentace 2
+('dancing', 'woman')
+s1 and s2 are talk about the same thing
+action on object  ['dancing'] ['dancing']
+object simality = 0.99999994
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A man is taking a picture of a drawing
+sentance 2 The person is drawing
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3)]
+
+sentance 1
+('taking', 'man')
+sentace 2
+('drawing', 'person')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A man is slicing a fish
+sentance 2 A man is cutting a fish
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('slicing', 'man')
+sentace 2
+('cutting', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  ENTAILMENT
+sentance 1 A young child with hair of black color is taking a picture with a camera
+sentance 2 A young child with black hair is taking a picture with a camera
+
+Dependency Parsing 2  [('ROOT', 0, 8), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 8, 3), ('case', 6, 4), ('amod', 6, 5), ('nmod', 3, 6), ('aux', 8, 7), ('det', 10, 9), ('dobj', 8, 10), ('case', 13, 11), ('det', 13, 12), ('nmod', 8, 13)]
+
+sentance 1
+('taking', 'child')
+sentace 2
+('taking', 'child')
+s1 and s2 are talk about the same thing
+action on object  ['taking'] ['taking']
+object simality = 0.99999994
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 Two small children are playing with a toy car in the street
+sentance 2 A girl is pushing a go-kart and a daughter is watching her father
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6), ('cc', 6, 7), ('det', 9, 8), ('conj', 6, 9), ('aux', 11, 10), ('advcl', 4, 11), ('nmod:poss', 13, 12), ('dobj', 11, 13)]
+
+sentance 1
+('playing', 'children')
+sentace 2
+('pushing', 'girl')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A band is playing onstage
+sentance 2 There is no band playing
+
+Dependency Parsing 2  [('ROOT', 0, 2), ('expl', 2, 1), ('neg', 5, 3), ('compound', 5, 4), ('nsubj', 2, 5)]
+
+sentance 1
+('playing', 'band')
+sentace 2
+('is', 'playing')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  CONTRADICTION
+sentance 1 Two kids are playing in a swimming pool with a crocodile float that is green
+sentance 2 Two kids are pushing an inflatable crocodile in a pool
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('nummod', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 7, 5), ('amod', 7, 6), ('dobj', 4, 7), ('case', 10, 8), ('det', 10, 9), ('nmod', 4, 10)]
+
+sentance 1
+('playing', 'kids')
+('green', 'that')
+sentace 2
+('pushing', 'kids')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  ENTAILMENT
+sentance 1 The man is feeding the snake with a mouse
+sentance 2 There is no man working on the laptop
+
+Dependency Parsing 2  [('ROOT', 0, 2), ('expl', 2, 1), ('neg', 4, 3), ('nsubj', 2, 4), ('acl', 4, 5), ('case', 8, 6), ('det', 8, 7), ('nmod', 5, 8)]
+
+sentance 1
+('feeding', 'man')
+sentace 2
+('is', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A woman is jumping with a bicycle
+sentance 2 The helmeted girl is perching on a bike
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('case', 8, 6), ('det', 8, 7), ('nmod', 5, 8)]
+
+sentance 1
+('jumping', 'woman')
+sentace 2
+('perching', 'girl')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A man in a suit is standing at a microphone and singing
+sentance 2 The man in a suit is standing at a microphone and singing
+
+Dependency Parsing 2  [('ROOT', 0, 7), ('det', 2, 1), ('nsubj', 7, 2), ('case', 5, 3), ('det', 5, 4), ('nmod', 2, 5), ('aux', 7, 6), ('case', 10, 8), ('det', 10, 9), ('nmod', 7, 10), ('cc', 10, 11), ('conj', 10, 12)]
+
+sentance 1
+('standing', 'man')
+sentace 2
+('standing', 'man')
+s1 and s2 are talk about the same thing
+action on object  ['standing'] ['standing']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 Ferrets are climbing up a shelf
+sentance 2 Ferrets are climbing down from a shelf
+
+Dependency Parsing 2  [('ROOT', 0, 3), ('nsubj', 3, 1), ('aux', 3, 2), ('compound:prt', 3, 4), ('case', 7, 5), ('det', 7, 6), ('nmod', 3, 7)]
+
+sentance 1
+('climbing', 'Ferrets')
+sentace 2
+('climbing', 'Ferrets')
+s1 and s2 are talk about the same thing
+action on object  ['climbing'] ['climbing']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 An onion is being cut by a man
+sentance 2 A man is slicing an onion
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+sentace 2
+('slicing', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  ENTAILMENT
+sentance 1 A black dog and a small white and black dog are looking up at a kitchen countertop
+sentance 2 A large dog and a small dog is standing on the kitchen counter and investigate
+
+Dependency Parsing 2  [('ROOT', 0, 9), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 9, 3), ('cc', 3, 4), ('det', 7, 5), ('amod', 7, 6), ('conj', 3, 7), ('aux', 9, 8), ('case', 13, 10), ('det', 13, 11), ('compound', 13, 12), ('nmod', 9, 13), ('cc', 9, 14), ('conj', 9, 15)]
+
+sentance 1
+('looking', 'dog')
+sentace 2
+('standing', 'dog')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A man is speaking
+sentance 2 One man is dancing
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('nummod', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3)]
+
+sentance 1
+('speaking', 'man')
+sentace 2
+('dancing', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A boy, who is young, is playing a wind instrument
+sentance 2 A kid is playing an instrument
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('playing', 'boy')
+('young', 'who')
+sentace 2
+('playing', 'kid')
+s1 and s2 are talk about the same thing
+action on object  ['playing'] ['playing']
+object simality = 1.0000001
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 The lady is slicing up the meat
+sentance 2 The lady is breaking an egg for the mixer
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6), ('case', 9, 7), ('det', 9, 8), ('nmod', 6, 9)]
+
+sentance 1
+('slicing', 'lady')
+sentace 2
+('breaking', 'lady')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A man is playing the guitar
+sentance 2 A man is not playing the guitar
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 2, 1), ('nsubj', 5, 2), ('aux', 5, 3), ('neg', 5, 4), ('det', 7, 6), ('dobj', 5, 7)]
+
+sentance 1
+('playing', 'man')
+sentace 2
+('playing', 'man')
+s1 and s2 are talk about the same thing
+action on object  ['playing'] ['playing']
+object simality = 1.0000001
+geuss ENTAILMENT
+anser was  CONTRADICTION
+sentance 1 The blonde girl with the pink top is smiling and wearing funny glasses with a large nose attached
+sentance 2 A little girl is frowning and taking off a fake nose and glasses
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('cc', 5, 6), ('conj', 5, 7), ('compound:prt', 7, 8), ('det', 11, 9), ('amod', 11, 10), ('dobj', 7, 11), ('cc', 11, 12), ('conj', 11, 13)]
+
+sentance 1
+('smiling', 'girl')
+sentace 2
+('frowning', 'girl')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 The woman is dicing onions
+sentance 2 There is no woman cutting an onion
+
+Dependency Parsing 2  [('ROOT', 0, 2), ('expl', 2, 1), ('neg', 4, 3), ('nsubj', 2, 4), ('acl', 4, 5), ('det', 7, 6), ('dobj', 5, 7)]
+
+sentance 1
+('dicing', 'woman')
+sentace 2
+('is', 'woman')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  CONTRADICTION
+sentance 1 A man in blue is riding a animal on a dirt road
+sentance 2 A man in a blue cowboy hat is riding a white horse
+
+Dependency Parsing 2  [('ROOT', 0, 9), ('det', 2, 1), ('nsubj', 9, 2), ('case', 7, 3), ('det', 7, 4), ('amod', 7, 5), ('compound', 7, 6), ('nmod', 2, 7), ('aux', 9, 8), ('det', 12, 10), ('amod', 12, 11), ('dobj', 9, 12)]
+
+sentance 1
+('riding', 'man')
+sentace 2
+('riding', 'man')
+s1 and s2 are talk about the same thing
+action on object  ['riding'] ['riding']
+object simality = 1.0000001
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 The grotto with a pink interior is being climbed by four middle eastern children, three girls and one boy
+sentance 2 A group of kids is playing on a colorful structure
+
+Dependency Parsing 2  [('ROOT', 0, 6), ('det', 2, 1), ('nsubj', 6, 2), ('case', 4, 3), ('nmod', 2, 4), ('aux', 6, 5), ('case', 10, 7), ('det', 10, 8), ('amod', 10, 9), ('nmod', 6, 10)]
+
+sentance 1
+sentace 2
+('playing', 'group')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  ENTAILMENT
+sentance 1 The parrot is speaking
+sentance 2 A parrot is speaking
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3)]
+
+sentance 1
+('speaking', 'parrot')
+sentace 2
+('speaking', 'parrot')
+s1 and s2 are talk about the same thing
+action on object  ['speaking'] ['speaking']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A dress, which is black, red, white and pink is being worn by a woman
+sentance 2 A woman is taking off a cloak, which is very large, and revealing an extravagant dress
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('compound:prt', 4, 5), ('det', 7, 6), ('dobj', 4, 7), ('punct', 7, 8), ('nsubj', 12, 9), ('cop', 12, 10), ('advmod', 12, 11), ('acl:relcl', 7, 12), ('punct', 4, 13), ('cc', 4, 14), ('conj', 4, 15), ('det', 18, 16), ('amod', 18, 17), ('dobj', 15, 18)]
+
+sentance 1
+('black', 'which')
+sentace 2
+('taking', 'woman')
+('large', 'which')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 An animated airplane is landing
+sentance 2 A plane is taking off
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('compound:prt', 4, 5)]
+
+sentance 1
+('landing', 'airplane')
+sentace 2
+('taking', 'plane')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A person in a blue jacket is jumping off of a tall cement wall
+sentance 2 The man is performing a large jump
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 7, 5), ('amod', 7, 6), ('dobj', 4, 7)]
+
+sentance 1
+('jumping', 'person')
+sentace 2
+('performing', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A man is leading the race
+sentance 2 A few men in a competition are running indoors
+
+Dependency Parsing 2  [('ROOT', 0, 8), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 8, 3), ('case', 6, 4), ('det', 6, 5), ('nmod', 3, 6), ('aux', 8, 7), ('advmod', 8, 9)]
+
+sentance 1
+('leading', 'man')
+sentace 2
+('running', 'men')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A young child is running down a road made of gravel that is covered with dead leaves
+sentance 2 A young child is running outside over the fallen leaves
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('advmod', 5, 6), ('case', 10, 7), ('det', 10, 8), ('amod', 10, 9), ('nmod', 5, 10)]
+
+sentance 1
+('running', 'child')
+sentace 2
+('running', 'child')
+s1 and s2 are talk about the same thing
+action on object  ['running'] ['running']
+object simality = 0.99999994
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 The person is not slicing onions
+sentance 2 A person is peeling an onion
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('slicing', 'person')
+sentace 2
+('peeling', 'person')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 The man is putting chicken into the box
+sentance 2 The man is putting chicken into the container
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('dobj', 4, 5), ('case', 8, 6), ('det', 8, 7), ('nmod', 4, 8)]
+
+sentance 1
+('putting', 'man')
+sentace 2
+('putting', 'man')
+s1 and s2 are talk about the same thing
+action on object  ['putting'] ['putting']
+object simality = 1.0000001
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A woman is frying something in a pan
+sentance 2 There is no woman frying something in a pan
+
+Dependency Parsing 2  [('ROOT', 0, 2), ('expl', 2, 1), ('neg', 6, 3), ('compound', 6, 4), ('amod', 6, 5), ('nsubj', 2, 6), ('case', 9, 7), ('det', 9, 8), ('nmod', 2, 9)]
+
+sentance 1
+('frying', 'woman')
+sentace 2
+('is', 'something')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  CONTRADICTION
+sentance 1 A man with no shirt is holding a football
+sentance 2 A shirtless man is playing football on a lawn
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('dobj', 5, 6), ('case', 9, 7), ('det', 9, 8), ('nmod', 5, 9)]
+
+sentance 1
+('holding', 'man')
+sentace 2
+('playing', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A woman is collecting tap water in a mug
+sentance 2 A woman is collecting the water from a tap in a mug
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6), ('case', 9, 7), ('det', 9, 8), ('nmod', 4, 9), ('case', 12, 10), ('det', 12, 11), ('nmod', 9, 12)]
+
+sentance 1
+('collecting', 'woman')
+sentace 2
+('collecting', 'woman')
+s1 and s2 are talk about the same thing
+action on object  ['collecting'] ['collecting']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 The man surrounded by photographers is wearing a gray suit and glasses
+sentance 2 The woman surrounded by photographers is wearing a gray suit and glasses
+
+Dependency Parsing 2  [('ROOT', 0, 7), ('det', 2, 1), ('nsubj', 7, 2), ('acl', 2, 3), ('case', 5, 4), ('nmod', 3, 5), ('aux', 7, 6), ('det', 10, 8), ('amod', 10, 9), ('dobj', 7, 10), ('cc', 10, 11), ('conj', 10, 12)]
+
+sentance 1
+('wearing', 'man')
+sentace 2
+('wearing', 'woman')
+s1 and s2 are talk about the same thing
+action on object  ['wearing'] ['wearing']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 The man is austerely playing a piano
+sentance 2 The man is playing a piano
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('playing', 'man')
+sentace 2
+('playing', 'man')
+s1 and s2 are talk about the same thing
+action on object  ['playing'] ['playing']
+object simality = 1.0000001
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A golden dog is running through a field of tall grass
+sentance 2 The golden dog is running through a field of tall grass
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('case', 8, 6), ('det', 8, 7), ('nmod', 5, 8), ('case', 11, 9), ('amod', 11, 10), ('nmod', 8, 11)]
+
+sentance 1
+('running', 'dog')
+sentace 2
+('running', 'dog')
+s1 and s2 are talk about the same thing
+action on object  ['running'] ['running']
+object simality = 0.99999994
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A person is looking at a motocross bike that is lying on its side and another is racing by
+sentance 2 The bike rider is not looking at the accident of another bike rider
+
+Dependency Parsing 2  [('ROOT', 0, 6), ('det', 3, 1), ('compound', 3, 2), ('nsubj', 6, 3), ('aux', 6, 4), ('neg', 6, 5), ('case', 9, 7), ('det', 9, 8), ('nmod', 6, 9), ('case', 13, 10), ('det', 13, 11), ('compound', 13, 12), ('nmod', 9, 13)]
+
+sentance 1
+('looking', 'person')
+('lying', 'that')
+('racing', 'another')
+sentace 2
+('looking', 'rider')
+s1 and s2 are talk about the same thing
+action on object  ['looking'] ['looking']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 A young girl in a blue shirt is walking on the sidewalk and holding up a pink sign
+sentance 2 There is no young girl in a blue shirt walking on the sidewalk and holding up a pink sign
+
+Dependency Parsing 2  [('ROOT', 0, 2), ('expl', 2, 1), ('neg', 5, 3), ('amod', 5, 4), ('nsubj', 2, 5), ('case', 9, 6), ('det', 9, 7), ('amod', 9, 8), ('nmod', 2, 9), ('dep', 9, 10), ('case', 13, 11), ('det', 13, 12), ('nmod', 10, 13), ('cc', 10, 14), ('conj', 10, 15), ('compound:prt', 15, 16), ('det', 19, 17), ('amod', 19, 18), ('dobj', 15, 19)]
+
+sentance 1
+('walking', 'girl')
+sentace 2
+('is', 'girl')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  CONTRADICTION
+sentance 1 The baby is not laughing and crawling
+sentance 2 The baby is laughing and crawling
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('cc', 4, 5), ('conj', 4, 6)]
+
+sentance 1
+('laughing', 'baby')
+sentace 2
+('laughing', 'baby')
+s1 and s2 are talk about the same thing
+action on object  ['laughing'] ['laughing']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  CONTRADICTION
+sentance 1 A man is sitting on the floor and is playing a guitar
+sentance 2 The man is pacing around a room
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('cop', 4, 3), ('case', 7, 5), ('det', 7, 6), ('nmod', 4, 7)]
+
+sentance 1
+('sitting', 'man')
+sentace 2
+('pacing', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 There is no monkey practicing martial arts
+sentance 2 A monkey is kicking a person
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('is', 'monkey')
+sentace 2
+('kicking', 'monkey')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 An old man with a beard that is grey is riding a bike
+sentance 2 A man is wearing a beret and is riding the bicycle on a recreation trail
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6), ('cc', 4, 7), ('aux', 9, 8), ('conj', 4, 9), ('det', 11, 10), ('dobj', 9, 11), ('case', 15, 12), ('det', 15, 13), ('compound', 15, 14), ('nmod', 9, 15)]
+
+sentance 1
+('riding', 'man')
+('grey', 'that')
+sentace 2
+('wearing', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 The man in not playing the flute
+sentance 2 The man is playing the flute
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+sentace 2
+('playing', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  CONTRADICTION
+sentance 1 Someone is typing on a keyboard
+sentance 2 Somebody is typing on the keyboard
+
+Dependency Parsing 2  [('ROOT', 0, 3), ('nsubj', 3, 1), ('aux', 3, 2), ('case', 6, 4), ('det', 6, 5), ('nmod', 3, 6)]
+
+sentance 1
+('typing', 'Someone')
+sentace 2
+('typing', 'Somebody')
+s1 and s2 are talk about the same thing
+action on object  ['typing'] ['typing']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A man is sprinkling shredded cheese on a pizza
+sentance 2 A man is sprinkling cheese on a pizza
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('dobj', 4, 5), ('case', 8, 6), ('det', 8, 7), ('nmod', 4, 8)]
+
+sentance 1
+('sprinkling', 'man')
+sentace 2
+('sprinkling', 'man')
+s1 and s2 are talk about the same thing
+action on object  ['sprinkling'] ['sprinkling']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A woman is deboning a fish
+sentance 2 A woman is freeing a fish
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('deboning', 'woman')
+sentace 2
+('freeing', 'woman')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  CONTRADICTION
+sentance 1 A boy is playing a guitar
+sentance 2 A kid is playing guitar
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('dobj', 4, 5)]
+
+sentance 1
+('playing', 'boy')
+sentace 2
+('playing', 'kid')
+s1 and s2 are talk about the same thing
+action on object  ['playing'] ['playing']
+object simality = 1.0000001
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A woman is slicing a potato
+sentance 2 A carrot is being sliced by a woman
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 2, 1), ('nsubjpass', 5, 2), ('aux', 5, 3), ('auxpass', 5, 4), ('case', 8, 6), ('det', 8, 7), ('nmod', 5, 8)]
+
+sentance 1
+('slicing', 'woman')
+sentace 2
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 Some fish are swimming
+sentance 2 One fish is swimming
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('nummod', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3)]
+
+sentance 1
+('swimming', 'fish')
+sentace 2
+('swimming', 'fish')
+s1 and s2 are talk about the same thing
+action on object  ['swimming'] ['swimming']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 One man is jumping off a rock wall and another man is dropping a rope
+sentance 2 The men are climbing a mountain
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('jumping', 'man')
+sentace 2
+('climbing', 'men')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A white man is walking a dog through brown water with difficulty
+sentance 2 A white and brown dog is walking through the water with difficulty
+
+Dependency Parsing 2  [('ROOT', 0, 7), ('det', 5, 1), ('amod', 5, 2), ('cc', 2, 3), ('conj', 2, 4), ('nsubj', 7, 5), ('aux', 7, 6), ('case', 10, 8), ('det', 10, 9), ('nmod', 7, 10), ('case', 12, 11), ('nmod', 7, 12)]
+
+sentance 1
+('walking', 'man')
+sentace 2
+('walking', 'dog')
+s1 and s2 are talk about the same thing
+action on object  ['walking'] ['walking']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 There is no white cat perched on a small wooden cabinet looking outside the window
+sentance 2 The cat perched on the table is looking out the window
+
+Dependency Parsing 2  [('ROOT', 0, 8), ('det', 2, 1), ('nsubj', 8, 2), ('acl', 2, 3), ('case', 6, 4), ('det', 6, 5), ('nmod', 3, 6), ('aux', 8, 7), ('compound:prt', 8, 9), ('det', 11, 10), ('dobj', 8, 11)]
+
+sentance 1
+('is', 'cat')
+sentace 2
+('looking', 'cat')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A man is cutting pieces of butter into a mixing bowl
+sentance 2 There is no man cutting pieces of butter into a mixing bowl
+
+Dependency Parsing 2  [('ROOT', 0, 2), ('expl', 2, 1), ('neg', 4, 3), ('nsubj', 2, 4), ('acl', 4, 5), ('dobj', 5, 6), ('case', 8, 7), ('nmod', 6, 8), ('case', 12, 9), ('det', 12, 10), ('amod', 12, 11), ('nmod', 5, 12)]
+
+sentance 1
+('cutting', 'man')
+sentace 2
+('is', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  CONTRADICTION
+sentance 1 A man with equipment used for climbing is under a vertical, white rock
+sentance 2 A woman with a ponytail is climbing a wall of rock
+
+Dependency Parsing 2  [('ROOT', 0, 7), ('det', 2, 1), ('nsubj', 7, 2), ('case', 5, 3), ('det', 5, 4), ('nmod', 2, 5), ('aux', 7, 6), ('det', 9, 8), ('dobj', 7, 9), ('case', 11, 10), ('nmod', 9, 11)]
+
+sentance 1
+('rock', 'man')
+sentace 2
+('climbing', 'woman')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A car is riskily jumping over a girl
+sentance 2 The girl is recklessly jumping onto a car
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 2, 1), ('nsubj', 5, 2), ('aux', 5, 3), ('advmod', 5, 4), ('case', 8, 6), ('det', 8, 7), ('nmod', 5, 8)]
+
+sentance 1
+('jumping', 'car')
+sentace 2
+('jumping', 'girl')
+s1 and s2 are talk about the same thing
+action on object  ['jumping'] ['jumping']
+object simality = 0.99999994
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 A man dressed in black and white is dropping the tennis racket and is waiting for the ball
+sentance 2 A tennis player in mid game is holding a racquet
+
+Dependency Parsing 2  [('ROOT', 0, 8), ('det', 3, 1), ('compound', 3, 2), ('nsubj', 8, 3), ('case', 6, 4), ('amod', 6, 5), ('nmod', 3, 6), ('aux', 8, 7), ('det', 10, 9), ('dobj', 8, 10)]
+
+sentance 1
+('dropping', 'man')
+sentace 2
+('holding', 'player')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 Two women dressed in white and black are sitting on a bench
+sentance 2 Two people are sitting on a park bench on a sunny day
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('nummod', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('case', 8, 5), ('det', 8, 6), ('compound', 8, 7), ('nmod', 4, 8), ('case', 12, 9), ('det', 12, 10), ('amod', 12, 11), ('nmod', 4, 12)]
+
+sentance 1
+('sitting', 'women')
+sentace 2
+('sitting', 'people')
+s1 and s2 are talk about the same thing
+action on object  ['sitting'] ['sitting']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 The children of a family are patiently playing and waiting
+sentance 2 The children of a family are playing and waiting
+
+Dependency Parsing 2  [('ROOT', 0, 7), ('det', 2, 1), ('nsubj', 7, 2), ('case', 5, 3), ('det', 5, 4), ('nmod', 2, 5), ('aux', 7, 6), ('cc', 7, 8), ('conj', 7, 9)]
+
+sentance 1
+('playing', 'children')
+sentace 2
+('playing', 'children')
+s1 and s2 are talk about the same thing
+action on object  ['playing'] ['playing']
+object simality = 1.0000001
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A woman is wakeboarding on a lake
+sentance 2 A woman is watching the lake
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('wakeboarding', 'woman')
+sentace 2
+('watching', 'woman')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A girl is cutting butter into two pieces
+sentance 2 A magician is cutting a girl into two pieces like butter
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6), ('case', 9, 7), ('nummod', 9, 8), ('nmod', 4, 9), ('case', 11, 10), ('nmod', 9, 11)]
+
+sentance 1
+('cutting', 'girl')
+sentace 2
+('cutting', 'magician')
+s1 and s2 are talk about the same thing
+action on object  ['cutting'] ['cutting']
+object simality = 0.9999999
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 The cat is licking a shallow dish full of milk
+sentance 2 The cat is licking milk from a saucer
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('dobj', 4, 5), ('case', 8, 6), ('det', 8, 7), ('nmod', 4, 8)]
+
+sentance 1
+('licking', 'cat')
+sentace 2
+('licking', 'cat')
+s1 and s2 are talk about the same thing
+action on object  ['licking'] ['licking']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 A child is sitting in a red and yellow toy car
+sentance 2 The small girl is riding in the toy car
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('case', 9, 6), ('det', 9, 7), ('compound', 9, 8), ('nmod', 5, 9)]
+
+sentance 1
+('sitting', 'child')
+sentace 2
+('riding', 'girl')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 People are sitting at square tables in a red room
+sentance 2 Several people are sitting at small tables in a light room
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('amod', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('case', 7, 5), ('amod', 7, 6), ('nmod', 4, 7), ('case', 11, 8), ('det', 11, 9), ('amod', 11, 10), ('nmod', 4, 11)]
+
+sentance 1
+('sitting', 'People')
+sentace 2
+('sitting', 'people')
+s1 and s2 are talk about the same thing
+action on object  ['sitting'] ['sitting']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 Boys are not dancing in front of some people
+sentance 2 Two men are doing a funny skit with a boxer in front of a crowd of people
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('nummod', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 7, 5), ('amod', 7, 6), ('dobj', 4, 7), ('case', 10, 8), ('det', 10, 9), ('nmod', 4, 10), ('case', 12, 11), ('nmod', 10, 12), ('case', 15, 13), ('det', 15, 14), ('nmod', 12, 15), ('case', 17, 16), ('nmod', 15, 17)]
+
+sentance 1
+('dancing', 'Boys')
+sentace 2
+('doing', 'men')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A person is slicing a potato
+sentance 2 A person is playing a piano
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('slicing', 'person')
+sentace 2
+('playing', 'person')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A rhino is grazing in a field
+sentance 2 A animal is grazing in a field
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('cop', 4, 3), ('case', 7, 5), ('det', 7, 6), ('nmod', 4, 7)]
+
+sentance 1
+('grazing', 'rhino')
+sentace 2
+('grazing', 'animal')
+s1 and s2 are talk about the same thing
+action on object  ['grazing'] ['grazing']
+object simality = 0.99999994
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 A race car driver is standing up and pointing his hand at the sky
+sentance 2 A person in a blue jacket is wearing a colorful helmet
+
+Dependency Parsing 2  [('ROOT', 0, 8), ('det', 2, 1), ('nsubj', 8, 2), ('case', 6, 3), ('det', 6, 4), ('amod', 6, 5), ('nmod', 2, 6), ('aux', 8, 7), ('det', 11, 9), ('amod', 11, 10), ('dobj', 8, 11)]
+
+sentance 1
+('standing', 'driver')
+sentace 2
+('wearing', 'person')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 Three men and a woman are posing for a picture
+sentance 2 A woman is posing for three men for a photo
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('case', 7, 5), ('nummod', 7, 6), ('nmod', 4, 7), ('case', 10, 8), ('det', 10, 9), ('nmod', 4, 10)]
+
+sentance 1
+('posing', 'men')
+sentace 2
+('posing', 'woman')
+s1 and s2 are talk about the same thing
+action on object  ['posing'] ['posing']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  NEUTRAL
+sentance 1 A dog is running across a rocky landscape
+sentance 2 A black dog is walking along rocky terrain
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('case', 8, 6), ('amod', 8, 7), ('nmod', 5, 8)]
+
+sentance 1
+('running', 'dog')
+sentace 2
+('walking', 'dog')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A man is playing a guitar
+sentance 2 A guitar is being played by a man
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 2, 1), ('nsubjpass', 5, 2), ('aux', 5, 3), ('auxpass', 5, 4), ('case', 8, 6), ('det', 8, 7), ('nmod', 5, 8)]
+
+sentance 1
+('playing', 'man')
+sentace 2
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  ENTAILMENT
+sentance 1 A man is making music with a flute
+sentance 2 A man is playing flute
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('dobj', 4, 5)]
+
+sentance 1
+('making', 'man')
+sentace 2
+('playing', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  ENTAILMENT
+sentance 1 The American footballer is not wearing a red and white strip
+sentance 2 The American footballer is wearing a red and white strip
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('det', 10, 6), ('amod', 10, 7), ('cc', 7, 8), ('conj', 7, 9), ('dobj', 5, 10)]
+
+sentance 1
+('wearing', 'footballer')
+sentace 2
+('wearing', 'footballer')
+s1 and s2 are talk about the same thing
+action on object  ['wearing'] ['wearing']
+object simality = 1.0
+geuss ENTAILMENT
+anser was  CONTRADICTION
+sentance 1 There is no man singing and playing a guitar
+sentance 2 A man is playing a guitar
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6)]
+
+sentance 1
+('is', 'singing')
+sentace 2
+('playing', 'man')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 A brown dog is jumping in the air
+sentance 2 The brown animal is jumping in the air
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 3, 1), ('amod', 3, 2), ('nsubj', 5, 3), ('aux', 5, 4), ('case', 8, 6), ('det', 8, 7), ('nmod', 5, 8)]
+
+sentance 1
+('jumping', 'dog')
+sentace 2
+('jumping', 'animal')
+s1 and s2 are talk about the same thing
+action on object  ['jumping'] ['jumping']
+object simality = 0.99999994
+geuss ENTAILMENT
+anser was  ENTAILMENT
+sentance 1 The man is playing a guitar
+sentance 2 The man is not playing a guitar
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 2, 1), ('nsubj', 5, 2), ('aux', 5, 3), ('neg', 5, 4), ('det', 7, 6), ('dobj', 5, 7)]
+
+sentance 1
+('playing', 'man')
+sentace 2
+('playing', 'man')
+s1 and s2 are talk about the same thing
+action on object  ['playing'] ['playing']
+object simality = 1.0000001
+geuss ENTAILMENT
+anser was  CONTRADICTION
+sentance 1 Two children are lying in the snow and are making snow angels
+sentance 2 Two people wearing snowsuits are on the ground making snow angels
+
+Dependency Parsing 2  [('ROOT', 0, 8), ('nummod', 2, 1), ('nsubj', 8, 2), ('acl', 2, 3), ('dobj', 3, 4), ('cop', 8, 5), ('case', 8, 6), ('det', 8, 7), ('acl', 8, 9), ('compound', 11, 10), ('dobj', 9, 11)]
+
+sentance 1
+('lying', 'children')
+sentace 2
+('ground', 'people')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 The man is driving a car carefully
+sentance 2 The windows are being cleaned by a man
+
+Dependency Parsing 2  [('ROOT', 0, 5), ('det', 2, 1), ('nsubjpass', 5, 2), ('aux', 5, 3), ('auxpass', 5, 4), ('case', 8, 6), ('det', 8, 7), ('nmod', 5, 8)]
+
+sentance 1
+('driving', 'man')
+sentace 2
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+sentance 1 There is no woman riding on an elephant
+sentance 2 A woman is opening a soda and drinking it
+
+Dependency Parsing 2  [('ROOT', 0, 4), ('det', 2, 1), ('nsubj', 4, 2), ('aux', 4, 3), ('det', 6, 5), ('dobj', 4, 6), ('cc', 6, 7), ('conj', 6, 8), ('dep', 6, 9)] 
+
+sentance 1
+('is', 'woman')
+sentace 2
+('opening', 'woman')
+action on object  [] []
+compare error
+object simality = 1
+gessing NEUTRAL
+anser was  NEUTRAL
+got right 61
+got wong 39
+
+Process finished with exit code 0

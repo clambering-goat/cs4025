@@ -85,26 +85,33 @@ for test_time in range(100):
 
     s1_action_on_object=[]
     s2_action_on_object=[]
-
+    theshold2=0.8
     for q in s1_subgect_dempndsy:
         for w in s2_subgect_dempndsy:
-            if q[1]==w[1]:
+            object1 = w[0]
+            object2 = q[0]
+            sim = word_vectors.similarity(object1, object2)
+            if sim>theshold2:
                 print("s1 and s2 are talk about the same thing")
                 s1_action_on_object.append(q[0])
                 s2_action_on_object.append(w[0])
 
     print("action on object ",s1_action_on_object,s2_action_on_object)
     try:
-        sim = word_vectors.similarity(s2_action_on_object,s1_action_on_object)
+        object1=s1_action_on_object[0]
+        object2=s2_action_on_object[0]
+        sim = word_vectors.similarity(object1,object2)
     except:
+        print("compare error")
         sim=1
-    theshold=0.5
+    theshold=0.8
     print("object simality =",sim)
     if sim>theshold and not len(s1_action_on_object)==0:
         teasts.guss("ENTAILMENT")
         print("geuss ENTAILMENT")
     elif  len(s1_action_on_object)==0:
         teasts.guss("NEUTRAL")
+        print("gessing NEUTRAL ")
     else:
         teasts.guss("CONTRADICTION")
         print("gessing CONTRADICTION")
