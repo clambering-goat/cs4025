@@ -1,6 +1,12 @@
  # Simple usage
 from stanfordcorenlp import StanfordCoreNLP
 import teasting
+import re
+import gensim.downloader as api
+
+
+word_vectors = api.load("glove-wiki-gigaword-100")
+
 
 
 teasts=teasting.teast()
@@ -14,7 +20,7 @@ nlp = StanfordCoreNLP(r'./stanford-corenlp-full-2018-10-05')
 
 
 
-for test_time in range(10):
+for test_time in range(100):
 
     data=teasts.get()
 
@@ -23,13 +29,13 @@ for test_time in range(10):
     sentence2=(data[1])
 
 
-    #sentence1="A man in a black jacket is doing tricks on a motorbike"
+    #sentence1="A girl from Asia, in front of a brick window, looks surprised"
 
     #sentence2="A person is riding the bicycle on one wheel"
 
-    sentance1_split=sentence1.split(" ")
-    sentance2_split=sentence2.split(" ")
-
+    sentance1_split=re.split(" |,|'",sentence1)
+    sentance2_split=re.split(" |,|'",sentence2)
+    # depencper count "," bracking code
 
     print("sentance 1",sentence1)
     print("sentance 2",sentence2)
@@ -44,7 +50,7 @@ for test_time in range(10):
     #print("#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{}}}}}}}}}}}}}}}}}}}}}}}}}}}\n")
 
 
-    #print("Dependency Parsing 2 ",s2_dependonsy,"\n")
+    print("Dependency Parsing 2 ",s2_dependonsy,"\n")
 
 
 
@@ -88,8 +94,13 @@ for test_time in range(10):
                 s2_action_on_object.append(w[0])
 
     print("action on object ",s1_action_on_object,s2_action_on_object)
-
-    if (s1_action_on_object)==s2_action_on_object:
+    try:
+        sim = word_vectors.similarity(s2_action_on_object,s1_action_on_object)
+    except:
+        sim=1
+    theshold=0.5
+    print("object simality =",sim)
+    if sim>theshold and not len(s1_action_on_object)==0:
         teasts.guss("ENTAILMENT")
         print("geuss ENTAILMENT")
     elif  len(s1_action_on_object)==0:
