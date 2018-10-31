@@ -20,14 +20,19 @@ nlp = StanfordCoreNLP(r'./stanford-corenlp-full-2018-10-05')
 
 
 
-for test_time in range(100):
+for test_time in range(4927):
 
-    data=teasts.get()
+    data=teasts.full_teast()
 
 
     sentence1=(data[0])
     sentence2=(data[1])
 
+    #full stop remover
+    if sentence1[-1]==".":
+        sentence1=sentence1[0:-2]
+    if sentence2[-1]==".":
+        sentence2=sentence2[0:-2]
 
     #sentence1="A girl from Asia, in front of a brick window, looks surprised"
 
@@ -48,9 +53,8 @@ for test_time in range(100):
 
 
     #print("#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{#{}}}}}}}}}}}}}}}}}}}}}}}}}}}\n")
-
-
-    print("Dependency Parsing 2 ",s2_dependonsy,"\n")
+    print("Dependency Parsing 1 ", s1_dependonsy, "\n")
+    print("Dependency Parsing 2 ", s2_dependonsy, "\n")
 
 
 
@@ -90,7 +94,14 @@ for test_time in range(100):
         for w in s2_subgect_dempndsy:
             object1 = w[0]
             object2 = q[0]
-            sim = word_vectors.similarity(object1, object2)
+            try:
+                sim = word_vectors.similarity(object1, object2)
+            except(KeyError):
+                print("errorr in word to vec ")
+                if object1==object2:
+                    sim=1
+                else:
+                    sim=0
             if sim>theshold2:
                 print("s1 and s2 are talk about the same thing")
                 s1_action_on_object.append(q[0])
@@ -120,4 +131,5 @@ for test_time in range(100):
 
 print("got right",teasts.got_right)
 print("got wong",teasts.got_wrong)
+print("% accucery ",(teasts.got_right+teasts.got_wrong)/teasts.got_right)
 nlp.close()  # Do not forget to close! The backend server will consume a lot memery.

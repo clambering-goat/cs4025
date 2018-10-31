@@ -10,7 +10,7 @@ class teast():
         file=open(train_data,"r")
         file=file.read()
         self.data=file.split("\n")
-
+        self.count=0
         self.got_right=0
         self.got_wrong=0
 
@@ -18,6 +18,16 @@ class teast():
         #[0] heater name not needed
         #print(len(data))
         pick=random.randint(1,4297)
+        data_picked=self.data[pick]
+        #print("random pick \n",data_picked)
+        data_picked=data_picked.split("	")
+        data_out=data_picked[1],data_picked[2]
+        self.anser=data_picked[4]
+        return(data_out)
+
+    def full_teast(self):
+        self.count=self.count+1
+        pick=self.count
         data_picked=self.data[pick]
         #print("random pick \n",data_picked)
         data_picked=data_picked.split("	")
@@ -54,5 +64,19 @@ def exsample():
     y=temp.guss("ENTAILMENT")
 
     print(y)
+    
+    temp=teast()
+for q in range(10):
+    x=temp.full_teast()
+
+    for q in x:
+      print(q)
+
+
+    y=temp.guss("ENTAILMENT")
+
+    print(y)
     '''
     print(teaxt)
+
+
