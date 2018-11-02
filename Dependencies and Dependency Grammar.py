@@ -1,9 +1,12 @@
- # Simple usage
+
+
 from stanfordcorenlp import StanfordCoreNLP
 import teasting
 import re
 import gensim.downloader as api
-
+import time
+import open_traning_data
+start = time.time()
 
 word_vectors = api.load("glove-wiki-gigaword-100")
 
@@ -11,14 +14,14 @@ word_vectors = api.load("glove-wiki-gigaword-100")
 
 teasts=teasting.teast()
 
-import open_traning_data
+
 data=open_traning_data.open_data()
 
 
 nlp = StanfordCoreNLP(r'./stanford-corenlp-full-2018-10-05')
 
 
-
+sentece_we_got_wong=[]
 
 for test_time in range(4927):
 
@@ -77,6 +80,21 @@ for test_time in range(4927):
             s2_subgect_dempndsy.append((sentance2_split[place1], sentance2_split[place2]))
 
 
+    s1_object_negation=[]
+    for q  in s1_dependonsy:
+        if q[0]=="neg":
+            place1=q[1]-1
+            place2=q[2]-1
+            s1_object_negation.append((sentance1_split[place1], sentance1_split[place2]))
+
+    s2_object_negation=[]
+    for q  in s2_dependonsy:
+        if q[0]=="neg":
+            place1=q[1]-1
+            place2=q[2]-1
+            s2_object_negation.append((sentance2_split[place1], sentance2_split[place2]))
+
+
 
     print("sentance 1 ")
     for q in s1_subgect_dempndsy:
@@ -115,21 +133,52 @@ for test_time in range(4927):
     except:
         print("compare error")
         sim=1
+
     theshold=0.8
     print("object simality =",sim)
-    if sim>theshold and not len(s1_action_on_object)==0:
-        teasts.guss("ENTAILMENT")
-        print("geuss ENTAILMENT")
+
+    nagitve_on_object=False
+    for q in s1_subgect_dempndsy:
+        for w in s2_subgect_dempndsy:
+            object1 = w[0]
+            object2 = q[0]
+            for t in s2_object_negation:
+                if t==object1 or object2:
+                    nagitve_on_object=True
+            for t  in s1_object_negation:
+                if t==object1 or object2:
+                    nagitve_on_object=True
+
+
+
+
+
+    gess=""
+    if sim>theshold and not len(s1_action_on_object)==0 and nagitve_on_object==False:
+        gess="ENTAILMENT"
+        result=teasts.guss("ENTAILMENT")
+
+
     elif  len(s1_action_on_object)==0:
-        teasts.guss("NEUTRAL")
-        print("gessing NEUTRAL ")
+        gess = "NEUTRAL"
+        result =teasts.guss("NEUTRAL")
+
+
     else:
-        teasts.guss("CONTRADICTION")
-        print("gessing CONTRADICTION")
+        gess = "CONTRADICTION"
+        result =teasts.guss("CONTRADICTION")
 
+
+
+    print("gessing ",gess)
     print("anser was ",teasts.anser)
-
+    if result=="no":
+        sentece_we_got_wong.append((sentence1,sentence2,teasts.anser ,gess))
 print("got right",teasts.got_right)
 print("got wong",teasts.got_wrong)
-print("% accucery ",(teasts.got_right+teasts.got_wrong)/teasts.got_right)
+print("% accucery ",teasts.got_right/(teasts.got_right+teasts.got_wrong))
 nlp.close()  # Do not forget to close! The backend server will consume a lot memery.
+end_time=time.time()
+print("##########################")
+
+print("time_taken is ",end_time-start)
